@@ -311,13 +311,25 @@ ul {
 .parallax-bg {
     position: absolute;
     inset: 0;
+    top: 45vh; 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     filter: brightness(0.7) contrast(1.1);
     z-index: 0;
 }
+@media (max-width: 768px) {
+    #parallax-bg {
+        top: 75vh !important;
+        /* Sostituisci col nome esatto del tuo file verticale */
+        background-image: url('IMG_3999_9_16.JPEG') !important;
+        
+        /* Assicura che parta centrata */
+        background-position: center center; 
+        background-size: cover;
 
+    }
+}
 .parallax-overlay {
     position: absolute;
     inset: 0;
