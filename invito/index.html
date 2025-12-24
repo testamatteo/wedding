@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marta & Matteo</title>
+  <base href="/">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const lightbox = GLightbox({ touchNavigation: true });
+    });
+  </script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="container navbar-container">
+
+    <div class="navbar-content">
+      
+      
+
+      <nav class="nav-desktop">
+        <a href="#home" class="navlink">Home</a>
+        <a href="#intro" class="navlink">Benvenuti</a>
+        <a href="#come-arrivare" class="navlink">Come Arrivare</a>
+        <a href="#foto" class="navlink">Foto</a>
+        <!--<a href="#regali" class="navlink">Regali</a>-->
+      </nav>
+
+      <button 
+        class="mobile-menu-btn"
+        onclick="toggleMenu()"
+        aria-label="Open menu"
+      >
+        <svg id="icon-menu" class="icon" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" 
+                d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+
+        <svg id="icon-close" class="icon hidden" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+
+    </div>
+
+    <nav id="mobile-menu" class="mobile-nav hidden">
+      <a href="#home" class="mobilelink">Home</a>
+      <a href="#intro" class="mobilelink">Benvenuti</a> 
+      <a href="#come-arrivare" class="mobilelink">Come Arrivare</a>
+      <a href="#foto" class="mobilelink">Foto</a>
+      <!--<a href="#regali" class="mobilelink">Regali</a>-->
+    </nav>
+
+  </div>
+</header>
+<div class="content-wrapper">
+
+  <div 
+    id="parallax-bg"
+    class="parallax-bg"
+    style="background-image: url('IMG_3999.JPEG');"
+  >
+  </div>
+
+  <div class="parallax-overlay"></div>
+
+  <div class="relative-container">
+<section id="home" class="hero">
+
+  <div class="hero-bg-wrapper">
+    <img src="sfondo.jpg" alt="Coppia felice" class="hero-bg-img" />
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="hero-content container">
+    <div class="hero-inner">
+
+      <p class="hero-subtitle"></p>
+
+      <div class="hero-title-group">
+        <h1 class="main-title">Matteo</h1>
+
+        <div class="ampersand-wrapper">
+          <div class="line"></div>
+          <span class="ampersand">&</span>
+          <div class="line"></div>
+        </div>
+
+        <h1 class="main-title">Marta</h1>
+      </div>
+
+      <div class="hero-details">
+        <div class="details-row">
+          <div class="detail-item">
+            <svg class="detail-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            <span>16 Maggio 2026</span>
+          </div>
+
+          <div class="detail-item">
+            <svg class="detail-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M12 21s-6-5.686-6-10a6 6 0 1 1 12 0c0 4.314-6 10-6 10z"></path>
+              <circle cx="12" cy="11" r="2"></circle>
+            </svg>
+            <span>Cattedrale di San Giusto Martire, Trieste</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-footer">
+        <p class="hero-footer-text"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    
+    <section id="intro" class="intro-section">
+      <div class="container intro-container">
+
+        <div class="divider-icon">
+          <div class="line white"></div>
+          <svg class="icon-lg text-rose-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M2.25 12l8.955-8.955c.42-.42 1.1-.42 1.52 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125h13.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21V12M15.75 21V12"/>
+          </svg>
+          <div class="line white"></div>
+        </div>
+        <div class="text-center mb-12">
+          <h2 class="section-title text-rose-800">Benvenuti</h2>
+        </div>
+        <p class="intro-text">
+          <strong>Ciao!</strong><br>
+          Siamo felicissimi di invitarvi al nostro matrimonio.  
+          Non vediamo l’ora di celebrare questo giorno speciale con voi,  
+          che ci avete accompagnato con affetto durante il nostro cammino.
+        </p>
+
+        <p class="intro-text">
+          In questo sito troverete tutte le informazioni utili per la giornata.  
+          Potete scorrere verso il basso oppure selezionare una sezione dal menu in alto ✨
+        </p>
+
+      </div>
+    </section>
+    <section id="come-arrivare" class="section-padded container bg-white-transparent">
+      
+      <div class="text-center mb-10">
+        
+        <div class="divider-icon">
+          <div class="line white"></div>
+          <svg class="icon-lg text-rose-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-6-5.686-6-10a6 6 0 1 1 12 0c0 4.314-6 10-6 10z"></path>
+            <circle cx="12" cy="11" r="2" fill="currentColor"></circle>
+          </svg>
+          <div class="line white"></div>
+        </div>
+        <div class="text-center mb-12">
+          <h2 class="section-title text-rose-800">Consigli per parcheggiare</h2>
+        </div>
+        <div class="parking-list-container">
+          <p class="font-semibold">
+          La celebrazione si terrà presso la <a href="https://maps.app.goo.gl/BrRQ3Q9n35FRmvC56" target="_blank" class="link-dark">Cattedrale di San Giusto Martire, Trieste</a>.
+          I parcheggi che si possono trovare sono:</p>
+          <ul class="parking-list">
+            <li>
+              <a href="https://maps.google.com/?q=Park+San+Giusto,+Trieste" target="_blank" class="link-rose">Park San Giusto</a>, parcheggio a pagamento custodito.  
+              Dall’interno del parcheggio è presente un ascensore pubblico che porta direttamente alla cattedrale.
+            </li>
+            <li>
+              <a href="https://maps.google.com/?q=Via+Capitolina,+Trieste" target="_blank" class="link-rose">Via Capitolina</a>, la strada che porta alla chiesa:  
+              ci sono diversi parcheggi a pagamento, ma spesso sono occupati.
+            </li>
+            <li>
+              <a href="https://maps.app.goo.gl/NTBjjgGykfsVwUQi8" target="_blank" class="link-rose">Viale della Rimembranza</a>, dove si trovano alcuni parcheggi liberi.  
+              La strada è stretta e i posti non sono molti.
+            </li>
+          </ul>
+        </div>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps?q=45.64649,13.77227&hl=it&z=15&output=embed"
+            width="100%" height="450" style="border:0;" loading="lazy" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="ricevimento" class="intro-section">
+      <div class="container intro-container">
+
+        <div class="divider-icon">
+          <div class="line white"></div>
+          <svg class="icon-lg text-rose-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M2.25 12l8.955-8.955c.42-.42 1.1-.42 1.52 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125h13.125c.621
+0 1.125-.504 1.125-1.125V9.75M8.25 21V12M15.75 21V12"/>
+          </svg>
+          <div class="line white"></div>
+        </div>
+        <div class="text-center mb-12">
+          <h2 class="section-title text-rose-800">Ricevimento</h2>
+        </div>
+        <p class="intro-text">
+          Dopo la cerimonia, siete tutti invitati a festeggiare con noi al
+          <a href="https://maps.app.goo.gl/1Yk2o6R3Y6E6o5TA" target="_blank" class="link-dark">Ristorante Al Bagatto</a>,  
+          situato in Via del Bosco, 4, Trieste.
+        </p>  
+    </section>
+</div> </div> 
+    <section id="foto" class="section-padded bg-rose-50">
+      
+      <div class="divider-icon">
+        <div class="line black"></div>
+        <svg class="icon-lg text-rose-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 5h4l2-2h4l2 2h4v14H4V5z"/>
+          <circle cx="12" cy="13" r="4"/>
+        </svg>
+        <div class="line black"></div>
+      </div>
+
+      <div class="text-center mb-12">
+        <h2 class="section-title text-rose-800">Ricordi</h2>
+      </div>
+
+      <div class="container">
+        <div class="photo-grid">
+          
+          <div class="photo-item span-2-col span-2-row">
+            <img src="IMG_3147.JPEG" class="photo-img">
+          </div>
+
+          <div class="photo-item">
+            <img src="IMG_3999.JPEG" class="photo-img">
+          </div>
+          <div class="photo-item">
+            <img src="Tezza-7866.jpg" class="photo-img contain">
+          </div>
+
+          <div class="photo-item span-2-col">
+            <img src="Tezza-3174.jpg" class="photo-img">
+          </div>
+
+          <div class="photo-item span-2-col">
+            <img src="IMG_4324.JPEG" class="photo-img contain">
+          </div>
+
+          <div class="photo-item">
+            <img src="IMG_6474.JPEG" class="photo-img">
+          </div>
+
+          <div class="photo-item">
+            <img src="IMG_9274.JPEG" class="photo-img contain">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+<!--<section id="regali" class="section-padded container">
+  
+  <div class="text-center mb-12">
+    <svg class="icon-xl text-rose-600 mb-4 mx-auto" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M20 12v8H4v-8m16 0H4m16 0-2-7H6l-2 7"></path>
+      <path stroke-linecap="round" stroke-linejoin="round" d="M12 12V5m0 0c1 3 4 2 4 0s-3-2-4 0Zm0 0C11 8 8 7 8 5s3-2 4 0Z"></path>
+    </svg>
+
+    <h2 class="section-title text-rose-800">Regali di Nozze</h2>
+  </div>
+
+  <p class="intro-text-dark text-center">
+    La vostra presenza è il regalo più grande ❤️  
+    Se desiderate contribuire al nostro viaggio di nozze:
+  </p>
+
+  <div class="iban-card">
+    <h3 class="iban-label">IBAN</h3>
+    <p class="iban-code">IT00X0000000000000000000</p>
+
+    <h3 class="iban-label mt-6">Intestato a</h3>
+    <p>Marta Degrassi & Matteo Testa</p>
+  </div>
+</section>-->
+
+<script>
+  function toggleMenu() {
+    // Ho uniformato l'ID a "mobile-menu"
+    const menu = document.getElementById("mobile-menu");
+    const iconMenu = document.getElementById("icon-menu");
+    const iconClose = document.getElementById("icon-close");
+
+    const isHidden = menu.classList.contains("hidden");
+
+    if (isHidden) {
+      // Apri menu
+      menu.classList.remove("hidden");
+      iconMenu.classList.add("hidden");
+      iconClose.classList.remove("hidden");
+    } else {
+      // Chiudi menu
+      menu.classList.add("hidden");
+      iconMenu.classList.remove("hidden");
+      iconClose.classList.add("hidden");
+    }
+  }
+</script>
+
+<script>
+window.addEventListener("scroll", function () {
+  const bg = document.getElementById("parallax-bg");
+  const intro = document.getElementById("intro");
+
+  // Calcolo sicurezza se l'elemento intro non esiste ancora
+  if(!intro || !bg) return;
+
+  const start = intro.offsetTop - (window.innerHeight / 2); 
+
+  if (window.scrollY < start) return;
+
+  const speed = 0.5;
+  const offset = (window.scrollY - start) * speed;
+
+  bg.style.backgroundPosition = `center calc(40% + ${offset}px)`;
+});
+</script>
+<script>
+  let lastScrollTop = 0;
+  const navbar = document.querySelector('.navbar');
+
+  window.addEventListener('scroll', function() {
+    let scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+    // Evita errori su rimbalzi di scorrimento (es. su iPhone)
+    if (scrollTop < 0) return; 
+
+    if (scrollTop > lastScrollTop) {
+      // Se stiamo scorrendo verso il BASSO -> Nascondi
+      navbar.classList.add('navbar-hidden');
+    } else {
+      // Se stiamo scorrendo verso l'ALTO -> Mostra
+      navbar.classList.remove('navbar-hidden');
+    }
+    
+    lastScrollTop = scrollTop;
+  });
+</script>
+<script>
+  // Seleziona tutti i link che hanno la classe "mobilelink"
+  const mobileLinks = document.querySelectorAll('.mobilelink');
+
+  // Per ogni link, aggiungi un "ascoltatore" di click
+  mobileLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+      // Quando si clicca il link, chiudiamo il menu richiamando la funzione esistente
+      toggleMenu(); 
+    });
+  });
+</script>
+</body>
+</html>
