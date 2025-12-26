@@ -557,16 +557,22 @@ ul {
   }
 }
 
-.parking-map {
-  width: 100%;
-  max-width: 600px;   /* dimensione massima desktop */
-  height: auto;
-  display: block;
-  margin: 1rem auto;
+.parking-box {
+  max-width: 90%;
+  margin: 1.5rem auto;
 }
 
+/* Desktop */
 @media (min-width: 1024px) {
-  .parking-map {
-    max-width: 200px; /* più piccola su desktop */
+  .parking-box {
+    max-width: 360px;   /* QUI decidi quanto è piccolo il riquadro */
   }
+}
+
+.parking-map {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
