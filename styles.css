@@ -558,11 +558,11 @@ ul {
 }
 
 .parking-map {
-  max-width: 100%;
+  width: 100%;
+  max-width: 600px;   /* dimensione massima desktop */
   height: auto;
-  border-radius: 12px;
-  margin-top: 1rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  display: block;
+  margin: 1rem auto;
 }
 
 @media (min-width: 1024px) {
